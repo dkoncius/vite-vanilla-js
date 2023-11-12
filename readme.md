@@ -15,13 +15,11 @@ $ git push -u origin main
 Step 2: Update vite.config.js
 Add the base URL in this file by setting the base as “/{repo-name}/”. For example, if your repository’s name is book-landing-page then set the base like this:
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: "/book-landing-page/"
+  base: "/vite-vanilla-js/"
 })
 
 
@@ -60,4 +58,5 @@ Step 5: Run Deploy
 If you’ve made it till here, you’re almost there. Run the final command:
 
 npm run deploy
-And you’re done!
+
+And you’re done! P.s. packagage.json and vite.config.js and github repozitory name should have the same url, like: vite-vanilla-js
